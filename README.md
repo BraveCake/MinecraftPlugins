@@ -2,10 +2,11 @@
 Central repository for the plugins that I've worked on
 
 ## Content
-- [EnhacedChat](#enhancedchat)
+- [EnhacedChat <sub> aka KLMChat </sub>](#enhancedchat)
 - [UnlimitedEnchantments](#unlimitedenchantments)
 
 ## EnhancedChat
+
 A plugin that extends the existing minecraft chat by adding extra functionalities such as :-
 - Sending messages the can only be seen by nearby players within a specific blocks range (default 250 blocks) via /loc <message> 
 - Replying quickly on the most recently received whisper message using /re <message>
