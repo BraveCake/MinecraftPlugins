@@ -1,0 +1,16 @@
+name: KLMChat
+version: '${project.version}'
+main: me.klmlocalchat.localchat.Main
+api-version: 1.19
+authors: [ BraveCake ]
+description: a utility chat plugin that supports local, private and quick messaging
+commands:
+  w:
+    aliases: [tell,msg,sms]
+  re:
+    description: reply on the most recently received message
+    usage : /re <message>
+  loc:
+    description: send a message seen only by nearby players (max distance 300 blocks)
+    usage : /loc Hello world
+    aliases: [local, localchat]

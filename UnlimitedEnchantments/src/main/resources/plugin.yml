@@ -1,0 +1,6 @@
+name: UnlimitedEnchantments
+version: '${project.version}'
+main: me.unlimitedenchantment.UnlimitedEnchantments
+api-version: 1.19
+description: a simple plugin that unlocks enchantment limitations
+authors: [ BraveCake,Saber ]
