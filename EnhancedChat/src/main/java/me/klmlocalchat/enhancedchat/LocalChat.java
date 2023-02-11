@@ -1,4 +1,4 @@
-package me.klmlocalchat.localchat;
+package me.klmlocalchat.enhancedchat;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

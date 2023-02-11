@@ -1,6 +1,6 @@
-name: KLMChat
+name: EnhancedChat
 version: '${project.version}'
-main: me.klmlocalchat.localchat.Main
+main: me.klmlocalchat.enhancedchat.Main
 api-version: 1.19
 authors: [ BraveCake ]
 description: a utility chat plugin that supports local, private and quick messaging

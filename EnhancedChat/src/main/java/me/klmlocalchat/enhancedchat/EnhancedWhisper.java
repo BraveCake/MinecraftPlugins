@@ -1,4 +1,4 @@
-package me.klmlocalchat.localchat;
+package me.klmlocalchat.enhancedchat;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -42,6 +42,7 @@ public class EnhancedWhisper implements CommandExecutor {
         //handles reply command
         if (cmd.getName().equalsIgnoreCase("re")) {
             Player receiver = lastWhisperer.get(sender.getName());
+            if (receiver !=null)
             sendPrivateMessage((Player) sender, receiver, String.join(" ", args));
             return true;
 
