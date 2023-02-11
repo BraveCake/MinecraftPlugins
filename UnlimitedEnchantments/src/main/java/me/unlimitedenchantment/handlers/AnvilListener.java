@@ -21,8 +21,8 @@ public class AnvilListener implements Listener {
         ItemStack slot2 = inventory.getItem(1);
         if(slot1==null || slot2==null)
             return;  //nothing to enchant (yet)
-        // Check if the item is enchantable by using Arrow_Damage (could be any enchantment)
-        Enchantment test = Enchantment.ARROW_DAMAGE;
+        // Check if the item is enchantable by using mending (could be any enchantment but mending more general)
+        Enchantment test = Enchantment.MENDING;
         if (test.canEnchantItem(slot1))
         {
            if( slot2.getType() == Material.ENCHANTED_BOOK )
@@ -30,7 +30,7 @@ public class AnvilListener implements Listener {
                //Clone slot1 item then apply the book enchantments on it finally set it as the final result
                ItemStack endProduct = slot1.clone();
                Map<Enchantment, Integer> enchantments = ((EnchantmentStorageMeta) slot2.getItemMeta()).getStoredEnchants();
-               int cost = slot1.getEnchantments().size()*2;
+               int cost = slot1.getEnchantments().size()*2+2;
                for (Map.Entry<Enchantment, Integer> entry : enchantments.entrySet()) {
                   endProduct.addUnsafeEnchantment(entry.getKey(),entry.getValue());
                   inventory.setRepairCost(cost);
