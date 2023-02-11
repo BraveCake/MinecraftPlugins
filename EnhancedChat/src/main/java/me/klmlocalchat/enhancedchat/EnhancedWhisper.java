@@ -14,6 +14,9 @@ public class EnhancedWhisper implements CommandExecutor {
     private final HashMap<String, Player> lastWhisperer = new HashMap<>();
     private boolean sendPrivateMessage(Player sender,Player receiver,String message)
     {
+        if(receiver == null)
+            return true;
+        lastWhisperer.put(receiver.getName(), (Player) sender);
         sender.sendMessage(ChatColor.GREEN + "[SMS] " + ChatColor.WHITE + sender.getName() + ": " +message);
         receiver.sendMessage(ChatColor.GREEN + "[SMS] " + ChatColor.WHITE + sender.getName() + ": " + message);
         return true;
@@ -31,9 +34,6 @@ public class EnhancedWhisper implements CommandExecutor {
                 sender.sendMessage("You cannot send a message to yourself, stoopid dogu >-<");
                 return true;
             }
-            if (receiver == null) //if player does not exist stop else send the message
-                return true;
-            lastWhisperer.put(receiver.getName(), (Player) sender);
             sendPrivateMessage((Player) sender, receiver, String.join(" ", Arrays.copyOfRange(args, 1, args.length)));
             return true;
 
@@ -42,7 +42,6 @@ public class EnhancedWhisper implements CommandExecutor {
         //handles reply command
         if (cmd.getName().equalsIgnoreCase("re")) {
             Player receiver = lastWhisperer.get(sender.getName());
-            if (receiver !=null)
             sendPrivateMessage((Player) sender, receiver, String.join(" ", args));
             return true;
 
