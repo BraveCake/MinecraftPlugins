@@ -1,0 +1,10 @@
+name: PKeepInventory
+version: '${project.version}'
+main: io.github.bravecake.pkeepinventory.Main
+description: a plugin that allows to decide whether you want to keep your items/xp after death or not
+authors: [ BraveCake]
+api-version: '1.20'
+commands:
+  ki:
+    aliases: [pki]
+    description: use it to toggle on and off keeping items after death it takes only a one of the three options xp,items and status
