@@ -19,5 +19,5 @@ A plugins that removes enchantment limitations so players can have any enchantme
 A plugins that gives each player the option to keep their items or xp after death thorugh a simple command /ki <option>.
 
 ## Credits
-+ Saber#1295
-+ 8sianRednek#5467
++ Saber86
++ 8sianrednek
