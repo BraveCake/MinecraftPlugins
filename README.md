@@ -4,6 +4,7 @@ Central repository for the plugins that I've worked on
 ## Content
 - [EnhacedChat <sub> aka KLMChat </sub>](#enhancedchat)
 - [UnlimitedEnchantments](#unlimitedenchantments)
+- [PersonalKeepInventory](#PersonalKeepInventory)
 
 ## EnhancedChat
 
@@ -13,6 +14,9 @@ A plugin that extends the existing minecraft chat by adding extra functionalitie
 
 ## UnlimitedEnchantments
 A plugins that removes enchantment limitations so players can have any enchantment on any enchantable item for instance you can have various protection enchantments on a single armor that's usually not possible without creative mode.
+
+## PersonalKeepInventory
+A plugins that gives each player the option to keep their items or xp after death thorugh a simple command /ki <option>.
 
 ## Credits
 + Saber#1295
