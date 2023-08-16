@@ -4,8 +4,8 @@ Central repository for the plugins that I've worked on
 ## Content
 - [EnhacedChat <sub> aka KLMChat </sub>](#enhancedchat)
 - [UnlimitedEnchantments](#unlimitedenchantments)
-- [PersonalKeepInventory](#PersonalKeepInventory)
-- [AFK](#AFK)
+- [PersonalKeepInventory](#personalkeepinventory)
+- [AFK](#afk)
 
 ## EnhancedChat
 
