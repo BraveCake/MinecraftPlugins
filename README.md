@@ -5,6 +5,7 @@ Central repository for the plugins that I've worked on
 - [EnhacedChat <sub> aka KLMChat </sub>](#enhancedchat)
 - [UnlimitedEnchantments](#unlimitedenchantments)
 - [PersonalKeepInventory](#PersonalKeepInventory)
+- [AFK](#AFK)
 
 ## EnhancedChat
 
@@ -17,6 +18,9 @@ A plugins that removes enchantment limitations so players can have any enchantme
 
 ## PersonalKeepInventory
 A plugins that gives each player the option to keep their items or xp after death thorugh a simple command /ki <option>.
+
+## AFK
+Do you want to secure yourself while you are away from keyboard in minecraft? just use/afk
 
 ## Credits
 + Saber86

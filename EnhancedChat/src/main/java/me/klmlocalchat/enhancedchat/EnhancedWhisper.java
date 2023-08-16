@@ -17,16 +17,16 @@ public class EnhancedWhisper implements CommandExecutor {
         if(receiver == null)
             return true;
         lastWhisperer.put(receiver.getName(), (Player) sender);
-        sender.sendMessage(ChatColor.GREEN + "[SMS] " + ChatColor.WHITE + sender.getName() + ": " +message);
+        sender.sendMessage(ChatColor.GREEN + "[SMS] " + ChatColor.WHITE + sender.getName() +ChatColor.GRAY+">>"+ChatColor.WHITE+receiver.getName()+ ": " +message);
         receiver.sendMessage(ChatColor.GREEN + "[SMS] " + ChatColor.WHITE + sender.getName() + ": " + message);
         return true;
     }
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (!(sender instanceof Player)) { //console shouldn't be able to use these commands
-            sender.sendMessage("This command can only be executed by a player.");
-            return true;
-        }
+            if (!(sender instanceof Player)) { //console shouldn't be able to use these commands
+                sender.sendMessage("This command can only be executed by a player.");
+                return true;
+            }
         //handles whisper command
         if (cmd.getName().equalsIgnoreCase("w")) {
             Player receiver = Bukkit.getPlayer(args[0]);

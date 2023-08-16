@@ -1,0 +1,11 @@
+name: AFK
+version: '${project.version}'
+main: io.github.bravecake.afk.Main
+api-version: '1.20'
+authors: [ BraveCake ]
+description: a plugin to secure yourself when you go away from keyboard
+commands:
+  afk:
+    description: just go away from keyboard there are no other commands to memorize
+    usage : /afk
+
