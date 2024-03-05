@@ -6,6 +6,7 @@ Central repository for the plugins that I've worked on
 - [UnlimitedEnchantments](#unlimitedenchantments)
 - [PersonalKeepInventory](#personalkeepinventory)
 - [AFK](#afk)
+- [MySystemInfo](#mysysteminfo)
 
 ## EnhancedChat
 
@@ -21,6 +22,9 @@ A plugins that gives each player the option to keep their items or xp after deat
 
 ## AFK
 Do you want to secure yourself while you are away from keyboard in minecraft? just use/afk
+
+## MySystemInfo
+A plugin that displays the hosting server basic specifications.
 
 ## Credits
 + Saber86
